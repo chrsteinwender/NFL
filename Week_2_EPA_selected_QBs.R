@@ -1,5 +1,10 @@
 
-
+install.packages("nflfastR")
+install.packages("ggplot2")
+install.packages("dplyr")
+library(nflfastR)
+library(dplyr)
+library(ggplot2)
 
 
 # Mahomes
@@ -161,7 +166,7 @@ week_2_only_SEA %>%
   )
 
 
-# Gegenüberstellung alle plays
+# GegenÃ¼berstellung alle plays
 
 plot(density(subset(
   week_2_only_KC$qb_epa, week_2_only_KC$qb_epa != "NA"
@@ -196,7 +201,7 @@ abline(v = mean(
 lty = 3,
 col = 3)
 
-# Gegenüberstellung pass plays
+# GegenÃ¼berstellung pass plays
 
 plot(
   density(
